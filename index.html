@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferocious X Cheats — Digital Store</title>
+<style>
+:root{--bg:#07070a;--card:#111116;--muted:#a7a7b3;--text:#f7f7fb;--accent:#ff2438;--accent2:#ff5b68;--border:#25252d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% -10%,#3d0a10 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.nav{position:sticky;top:0;z-index:10;background:rgba(7,7,10,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.navin{max-width:1120px;margin:auto;padding:17px 22px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.5px}.brand span{color:var(--accent)}nav a{margin-left:22px;color:#cfcfd8;font-size:14px}nav a:hover{color:#fff}
+.hero{max-width:1120px;margin:auto;padding:85px 22px 65px;text-align:center}.badge{display:inline-block;padding:7px 12px;border:1px solid #542027;border-radius:999px;background:#17090c;color:#ff7b86;font-size:12px;font-weight:800}.hero h1{font-size:clamp(42px,8vw,78px);line-height:.95;margin:20px 0 16px}.hero h1 span{color:var(--accent)}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:17px;line-height:1.7}.actions{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.btn{padding:13px 20px;border-radius:11px;border:1px solid var(--border);font-weight:800;background:#15151b}.btn.primary{background:var(--accent);border-color:var(--accent)}.btn:hover{transform:translateY(-1px)}
+.section{max-width:1120px;margin:auto;padding:50px 22px}.section h2{font-size:32px;margin:0 0 8px}.section>p{color:var(--muted);margin-top:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:25px}.card{background:linear-gradient(180deg,#15151b,#0e0e13);border:1px solid var(--border);border-radius:18px;padding:22px;position:relative;overflow:hidden}.card:hover{border-color:#5b2329}.offer{position:absolute;right:15px;top:15px;background:var(--accent);padding:6px 9px;border-radius:8px;font-size:11px;font-weight:900}.tag{color:#ff7b86;font-size:12px;font-weight:900;text-transform:uppercase}.card h3{font-size:23px;margin:8px 0}.desc{color:var(--muted);font-size:14px;min-height:44px}.price{font-size:28px;font-weight:950;margin:18px 0 3px}.old{text-decoration:none;color:#cfcfd8;font-size:15px}.plan{display:flex;justify-content:space-between;gap:12px;margin-top:12px}.plan div{flex:1;background:#0b0b10;border:1px solid var(--border);border-radius:10px;padding:11px}.plan small{display:block;color:var(--muted);font-size:11px;margin-bottom:4px}.plan strong{font-size:18px}.features{padding:0;margin:18px 0;list-style:none;color:#cfcfd8;font-size:14px;line-height:2}.features li::before{content:"✓";color:#ff4c5a;font-weight:900;margin-right:8px}.buy{width:100%;border:0;padding:13px;border-radius:10px;background:#fff;color:#08080b;font-weight:900;cursor:pointer}.buy:hover{background:#ffdadd}
+.payment{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}.panel{background:#101015;border:1px solid var(--border);border-radius:18px;padding:24px}.panel h3{margin-top:0}.qr{display:block;width:min(260px,100%);aspect-ratio:1;margin:15px auto;border-radius:12px;background:#1a1a21;object-fit:cover}.note{color:var(--muted);font-size:13px;line-height:1.6}.faq{border-top:1px solid var(--border)}details{padding:18px 0;border-bottom:1px solid var(--border)}summary{cursor:pointer;font-weight:800}details p{color:var(--muted);line-height:1.6}
+footer{border-top:1px solid var(--border);margin-top:35px;padding:28px 22px;text-align:center;color:#777783;font-size:13px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.payment{grid-template-columns:1fr}nav{display:none}.hero{padding-top:60px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="navin">
+<div class="brand">FEROCIOUS <span>X</span> CHEATS</div>
+<nav><a href="#store">Store</a><a href="#payment">Payment</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main>
+<section class="hero">
+<span class="badge">DIGITAL STORE • FAST DELIVERY</span>
+<h1>FEROCIOUS <span>X</span><br>CHEATS</h1>
+<p>A clean storefront for your digital gaming products. Update products, prices, offers and QR codes from one simple configuration file.</p>
+<div class="actions"><a class="btn primary" href="#store">View Products</a><a class="btn" href="#payment">Payment</a></div>
+</section>
+
+<section class="section" id="store">
+<h2>Available Products</h2><p>Choose a plan and follow the payment instructions.</p>
+<div class="grid" id="products"></div>
+</section>
+
+<section class="section" id="payment">
+<h2>Payment</h2><p>Scan the QR shown after selecting a product and submit your payment reference through your support channel.</p>
+<div class="payment">
+<div class="panel"><h3>How to order</h3>
+<ol class="note">
+<li>Select your product.</li><li>Scan the displayed QR code using your payment app.</li><li>Complete payment and save the transaction/reference ID.</li><li>Contact support with your order details and payment reference.</li>
+</ol>
+<p class="note"><b>Important:</b> Only use the payment details shown on your own verified store.</p></div>
+<div class="panel"><h3>Selected product</h3><img id="selectedQR" class="qr" src="images/qr-default.svg" alt="Payment QR"><p id="selectedName" style="text-align:center;font-weight:900">Select a product</p></div>
+</div>
+</section>
+
+<section class="section" id="faq">
+<h2>FAQ</h2><p>Quick answers for customers.</p>
+<div class="faq">
+<details><summary>How do I change prices?</summary><p>Edit the <b>price</b> and <b>oldPrice</b> fields in <code>products.js</code>.</p></details>
+<details><summary>How do I add my QR code?</summary><p>Put your QR image inside the <b>images</b> folder and set its filename in the product's <b>qr</b> field.</p></details>
+<details><summary>How do I change an offer?</summary><p>Edit the <b>offer</b> field. You can write things such as “30% OFF” or “NEW”.</p></details>
+<details><summary>Can I add more products?</summary><p>Yes. Duplicate a product object in <b>products.js</b> and change its details.</p></details>
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact</h2><p>Replace the button below with your official support/Discord URL.</p>
+<a class="btn primary" href="#" onclick="return false;">Contact Support</a>
+</section>
+</main>
+
+<footer>© 2026 Ferocious X Cheats • Digital storefront template</footer>
+<script src="products.js"></script>
+<script>
+const wrap=document.getElementById("products"), qr=document.getElementById("selectedQR"), name=document.getElementById("selectedName");
+products.forEach((p,i)=>{
+ const card=document.createElement("article"); card.className="card";
+ card.innerHTML=`<span class="offer">${p.offer}</span><div class="tag">${p.category}</div><h3>${p.name}</h3><div class="desc">${p.description}</div><div class="plan"><div><small>MONTHLY</small><strong>₹${p.monthly.toLocaleString("en-IN")}</strong></div><div><small>PERMANENT</small><strong>₹${p.permanent.toLocaleString("en-IN")}</strong></div></div><ul class="features">${p.features.map(x=>`<li>${x}</li>`).join("")}</ul><button class="buy">Select & Pay</button>`;
+ card.querySelector("button").onclick=()=>{qr.src=p.qr;name.textContent=p.name;document.getElementById("payment").scrollIntoView({behavior:"smooth"});};
+ wrap.appendChild(card);
+});
+</script>
+</body>
+</html>
